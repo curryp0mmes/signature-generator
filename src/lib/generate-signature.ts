@@ -17,9 +17,85 @@ export function generateSignature({
             <tbody>
             <tr>
                 <td style="vertical-align: top;">
-                    <img alt="WüSpace Logo" style="width:64px"
-                         src="data:image/jpeg;filename=wuespace-logo.jpg;base64,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"
-                         moz-do-not-send="false">
+                    <svg width=64 height=64 fill="black" stroke-width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #000;
+                            stroke: #000;
+                            stroke-linejoin: round;
+                            stroke-width: 5px;
+                          }
+                    
+                          .cls-2 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 15px;
+                          }
+                        </style>
+                      </defs>
+                      <g id="Symbole">
+                        <g id="SternMix">
+                          <g id="RayV">
+                            <path class="cls-1" d="M249.54,625c-4.39-41.59-5.39-83.26-5.54-125,0-20.83.37-41.67,1.18-62.5.85-20.83,2.05-41.67,4.35-62.5.03-.25.26-.44.51-.41,5.48,41.15,5.48,83.69,5.95,125.41-.14,41.74-1.14,83.41-5.54,125-.03.25-.26.44-.51.41-.22-.02-.39-.2-.41-.41h0Z"/>
+                          </g>
+                          <g id="RayH">
+                            <path class="cls-1" d="M125,499.58c37.4-4.12,74.95-4.54,112.5-5.02,15.03-.25,30.02.1,45,1.72,7.5.68,15,1.53,22.5,3.3.42.08.44.76,0,.85-7.5,1.77-15,2.63-22.5,3.3-22.44,2.47-44.98,1.76-67.5,1.49-30.05-.93-60.06-1.25-90-4.79-.23-.03-.4-.24-.37-.48.02-.2.18-.35.37-.37h0Z"/>
+                          </g>
+                          <g id="RayMed2">
+                            <path class="cls-1" d="M195.89,553.67c11.61-13.46,24.69-27.89,36.76-41.02,5.62-5.82,12.97-14.64,19.13-19.77,7.11-5.86,14.28-11.65,21.89-17,.14-.1.34-.07.44.08.08.11.07.25,0,.36-5.35,7.61-11.14,14.79-17,21.89-1.48,1.76-3.02,3.46-4.66,5.06-7.22,6.85-17.87,16.6-25.25,23.37-9.87,8.97-20.82,18.8-30.87,27.46-.26.24-.69-.16-.44-.44h0Z"/>
+                          </g>
+                          <g id="RayMed1">
+                            <path class="cls-1" d="M196.33,445.89c13.46,11.61,27.89,24.69,41.02,36.76,5.82,5.62,14.64,12.97,19.77,19.13,5.86,7.11,11.65,14.28,17,21.89.1.14.07.34-.08.44-.11.08-.25.07-.36,0-7.61-5.35-14.79-11.14-21.89-17-1.76-1.48-3.46-3.02-5.06-4.66-6.85-7.22-16.6-17.87-23.37-25.25-8.97-9.87-18.8-20.82-27.46-30.87-.24-.26.16-.69.44-.44h0Z"/>
+                          </g>
+                          <g id="RaySmall2">
+                            <path class="cls-1" d="M203.71,518.9c11.02-5.99,22.26-11.53,33.58-16.93,3.77-1.78,7.55-3.54,11.37-5.21,1.77-.77,3.84.03,4.61,1.81.8,1.81-.09,3.94-1.93,4.66-3.88,1.52-7.8,2.95-11.72,4.36-7.87,2.81-15.77,5.49-23.72,8.06-3.98,1.28-7.97,2.54-11.99,3.71-.27.08-.46-.32-.19-.46h0Z"/>
+                          </g>
+                          <g id="RaySmall1">
+                            <path class="cls-1" d="M230.64,546.1c3.55-12.03,7.58-23.9,11.77-35.71,1.41-3.93,2.84-7.84,4.36-11.72.7-1.8,2.74-2.69,4.54-1.98,1.85.72,2.73,2.85,1.93,4.66-1.67,3.82-3.43,7.6-5.21,11.37-3.58,7.55-7.27,15.04-11.07,22.47-1.91,3.72-3.84,7.43-5.86,11.1-.13.25-.55.09-.46-.19h0Z"/>
+                          </g>
+                          <g id="RaySmall4">
+                            <path class="cls-1" d="M231.1,453.71c5.99,11.02,11.53,22.26,16.93,33.58,1.78,3.77,3.54,7.55,5.21,11.37.77,1.77-.03,3.84-1.81,4.61-1.81.8-3.94-.09-4.66-1.93-1.52-3.88-2.95-7.8-4.36-11.72-2.81-7.87-5.49-15.77-8.06-23.72-1.28-3.98-2.54-7.97-3.71-11.99-.08-.27.32-.46.46-.19h0Z"/>
+                          </g>
+                          <g id="RaySmall3">
+                            <path class="cls-1" d="M203.9,480.64c12.03,3.55,23.9,7.58,35.71,11.77,3.92,1.41,7.84,2.84,11.72,4.36,1.8.7,2.69,2.74,1.98,4.54-.72,1.85-2.85,2.73-4.66,1.93-3.82-1.67-7.6-3.43-11.37-5.21-7.55-3.58-15.04-7.27-22.47-11.07-3.72-1.91-7.43-3.84-11.1-5.86-.25-.13-.09-.55.19-.46h0Z"/>
+                          </g>
+                        </g>
+                        <g id="Planet">
+                          <path class="cls-1" d="M633.16,712.26c-60.61,41.21-139.85,52.13-209.85,30.98-51.95-15.76-97.77-47.99-130.11-91.6-6.62-8.89-13.13-19.01-18.56-28.67-3.93-7.15-7.93-15.53-11.24-23.05-1.15-3-3.65-9.06-4.72-11.93-1.35-3.96-2.82-8.21-4.11-12.15-1.4-4.84-3.44-11.66-4.47-16.51-1.65-6.42-3.05-14.42-4.15-20.97-.44-4.15-1.21-8.6-1.61-12.73-.28-3.08-.76-9.83-.98-12.79-.07-2.66-.28-10.06-.35-12.83,0,0,.23-8.55.23-8.55.02-4.87.74-12.16,1.1-17.07.4-4.1,1.14-8.61,1.61-12.73,1.59-9.59,3.59-19.92,6.26-29.26,1.71-6.43,4.28-14.14,6.47-20.38,1.01-2.88,3.64-9.03,4.72-11.93,1.22-2.53,4.1-9.18,5.32-11.67,3.05-6.06,6.65-12.92,10.22-18.77,2.83-4.84,6.1-9.73,9.25-14.36,1.57-2.08,5.88-8.33,7.57-10.33,9.48-12.34,20.35-23.9,31.85-34.39,27.47-24.61,60.43-43.09,95.69-53.82,7.88-2.39,16.64-4.4,24.72-6.06,8.09-1.51,16.97-2.71,25.17-3.52,55.92-5.04,113.45,9.06,159.97,40.57.25.17.31.5.14.75-.16.24-.47.3-.72.16-9.58-5.57-19.46-10.58-29.64-14.86-55.48-23.72-119.41-26.4-176.63-7.48-47.65,15.65-90.22,46.33-120.28,86.46-1.58,1.9-5.51,7.79-7.05,9.91-4.35,6.41-8.81,13.98-12.58,20.8-1.85,3.4-3.72,7.37-5.54,10.81-1.04,2.36-3.91,8.59-4.99,11.08-1.13,2.75-3.37,8.67-4.41,11.31-1.17,3.78-2.69,7.77-3.84,11.52-.81,2.82-2.54,8.97-3.26,11.7-.79,3.86-1.92,8-2.67,11.84-1.46,7.72-2.74,16.24-3.54,24.01-.2,2.83-.71,9.37-.87,12.11-.08,2.6-.2,9.46-.29,12.14.08,2.62.21,9.59.28,12.14.42,6.29.93,13.92,1.85,20.15,12.47,98.58,86.54,181.6,182.85,205.99,53.03,13.78,110.53,9.47,160.98-12.07,10.18-4.28,20.06-9.29,29.64-14.86.26-.15.59-.06.74.19.14.25.07.56-.16.72h0Z"/>
+                        </g>
+                        <g id="Ringe">
+                          <path class="cls-1" d="M909.77,90.23c-43.9-43.9-127.91-41.89-236.57,5.65-44.43,19.44-90.87,45.55-137.78,77.19,25.46-14.11,50.58-26.06,74.97-35.73,22.51-12.59,44.71-23.72,66.42-33.22,51.43-22.5,97.22-34.68,136.08-36.19,2.72-.11,5.39-.16,8.02-.16,35.63,0,63.36,9.68,82.5,28.82,20.55,20.56,30.2,51.01,28.66,90.52-1.51,38.86-13.69,84.64-36.19,136.08-9.5,21.71-20.63,43.91-33.22,66.42-9.67,24.4-21.62,49.51-35.73,74.97,31.65-46.91,57.75-93.35,77.19-137.78,47.54-108.66,49.54-192.67,5.65-236.57Z"/>
+                          <path class="cls-1" d="M389.61,862.66c-22.51,12.59-44.71,23.72-66.42,33.22-51.43,22.5-97.22,34.68-136.08,36.19-39.51,1.55-69.97-8.11-90.52-28.66-20.56-20.56-30.2-51.01-28.66-90.52,1.51-38.86,13.69-84.64,36.19-136.08,9.5-21.71,20.63-43.91,33.22-66.42,9.67-24.4,21.62-49.51,35.73-74.97-31.65,46.91-57.76,93.36-77.19,137.78-47.54,108.66-49.54,192.67-5.65,236.57,21.03,21.03,51.26,31.53,89.01,31.53,41.04,0,90.96-12.41,147.56-37.17,44.43-19.44,90.87-45.54,137.78-77.19-25.46,14.11-50.57,26.06-74.97,35.73Z"/>
+                        </g>
+                      </g>
+                      <g id="Text">
+                        <g id="TextSpace">
+                          <g id="E">
+                            <path id="E-2" data-name="E" class="cls-2" d="M785,570h53.33"/>
+                            <path id="C" class="cls-2" d="M849,626h-36c-15.46,0-28-12.54-28-28v-56c0-15.46,12.54-28,28-28h36"/>
+                          </g>
+                          <path id="C-2" data-name="C" class="cls-2" d="M760,626h-36c-15.46,0-28-12.54-28-28v-56c0-15.46,12.54-28,28-28h36"/>
+                          <g id="A">
+                            <path id="C-3" data-name="C" class="cls-2" d="M607,626v-84c0-15.46,12.54-28,28-28h8c15.46,0,28,12.54,28,28v84"/>
+                            <line class="cls-2" x1="607" y1="570" x2="671" y2="570"/>
+                          </g>
+                          <path id="P" class="cls-2" d="M582,542h0c0-15.46-12.54-28-28-28h-36v112-56h36c15.46,0,28-12.54,28-28Z"/>
+                          <path id="S" class="cls-2" d="M493,514h-36c-15.46,0-28,12.54-28,28h0c0,15.46,12.54,28,28,28h8c15.46,0,28,12.54,28,28h0c0,15.46-12.54,28-28,28h-36"/>
+                        </g>
+                        <g id="TextWÜ">
+                          <polyline id="W" class="cls-2" points="509 374 509 486 469 453.92 429 486 429 374"/>
+                          <g>
+                            <g id="_Ü" data-name="Ü">
+                              <line id="UPunkt" class="cls-2" x1="580.25" y1="394" x2="580.25" y2="374"/>
+                            </g>
+                            <path id="W-2" data-name="W" class="cls-2" d="M620.25,374v77c0,19.33-15.67,35-35,35h-10c-19.33,0-35-15.67-35-35v-77"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
                 </td>
                 <td style="padding-left: 1em; vertical-align: top">
                     ${name}<br>
@@ -60,7 +136,7 @@ export function generateSignature({
                         Vereinsregisternummer: 201239 (Amtsgericht Würzburg)
                     </p>
                     <p>
-                        <a href="https://www.wuespace.de" style="color: rgb(69, 40, 151)">https://www.wuespace.de</a>
+                        <a href="https://go.wuespace.de" style="color: rgb(69, 40, 151)">https://go.wuespace.de</a>
                     </p>
                     <table style="border-collapse:collapse;" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tbody>
@@ -71,40 +147,28 @@ export function generateSignature({
                                     <tbody>
                                     <tr>
                                         <td align="center" height="34" width="34"><a
-                                                href="https://www.facebook.com/pg/wuespace/"><img
-                                                src="https://d1ctrvvfkbyl4b.cloudfront.net/clips/social-icons/facebook-light%402x.png"
-                                                alt="Facebook"
-                                                style="display:block; outline:0;border:0;padding:0;width:24px;height:auto;"
-                                                border="0" width="24"></a>
+                                                href="https://go.wuespace.de/instagram">
+                                                <svg width="24" height="24" fill="white" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg></a>
                                         </td>
                                         <td align="center" height="34" width="34"><a
-                                                href="https://www.youtube.com/channel/UC1mwTgqCY5-G1RouptOXnSg"><img
-                                                src="https://d1ctrvvfkbyl4b.cloudfront.net/clips/social-icons/youtube-light%402x.png"
-                                                alt="YouTube"
-                                                style="display:block; outline:0;border:0;padding:0;width:24px;height:auto;"
-                                                border="0" width="24"></a>
+                                                href="https://go.wuespace.de/mastodon">
+                                                <svg width="24" height="24" fill="white" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M23.193 7.879c0-5.206-3.411-6.732-3.411-6.732C18.062.357 15.108.025 12.041 0h-.076c-3.068.025-6.02.357-7.74 1.147 0 0-3.411 1.526-3.411 6.732 0 1.192-.023 2.618.015 4.129.124 5.092.934 10.109 5.641 11.355 2.17.574 4.034.695 5.535.612 2.722-.15 4.25-.972 4.25-.972l-.09-1.975s-1.945.613-4.129.539c-2.165-.074-4.449-.233-4.799-2.891a5.499 5.499 0 0 1-.048-.745s2.125.52 4.817.643c1.646.075 3.19-.097 4.758-.283 3.007-.359 5.625-2.212 5.954-3.905.517-2.665.475-6.507.475-6.507zm-4.024 6.709h-2.497V8.469c0-1.29-.543-1.944-1.628-1.944-1.2 0-1.802.776-1.802 2.312v3.349h-2.483v-3.35c0-1.536-.602-2.312-1.802-2.312-1.085 0-1.628.655-1.628 1.944v6.119H4.832V8.284c0-1.289.328-2.313.987-3.07.68-.758 1.569-1.146 2.674-1.146 1.278 0 2.246.491 2.886 1.474L12 6.585l.622-1.043c.64-.983 1.608-1.474 2.886-1.474 1.104 0 1.994.388 2.674 1.146.658.757.986 1.781.986 3.07v6.304z"></path></svg></a>
                                         </td>
                                         <td align="center" height="34" width="34"><a
-                                                href="https://twitter.com/WueSpace"><img
-                                                src="https://d1ctrvvfkbyl4b.cloudfront.net/clips/social-icons/twitter-light%402x.png"
-                                                alt="Twitter"
-                                                style="display:block; outline:0;border:0;padding:0;width:24px;height:auto;"
-                                                border="0" width="24"></a>
+                                                href="https://go.wuespace.de/youtube">
+                                                <svg width="24" height="24" fill="white" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg></a>
                                         </td>
                                         <td align="center" height="34" width="34"><a
-                                                href="https://www.instagram.com/wuespace/"><img
-                                                src="https://d1ctrvvfkbyl4b.cloudfront.net/clips/social-icons/instagram-light%402x.png"
-                                                alt="Instagram"
-                                                style="display:block; outline:0;border:0;padding:0;width:24px;height:auto;"
-                                                border="0" width="24"></a>
+                                                href="https://go.wuespace.de/bluesky">
+                                                <svg width="24" height="24" fill="white" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M6.3,4.2c2.3,1.7,4.8,5.3,5.7,7.2.9-1.9,3.4-5.4,5.7-7.2,1.7-1.3,4.3-2.2,4.3.9s-.4,5.2-.6,5.9c-.7,2.6-3.3,3.2-5.6,2.8,4,.7,5.1,3,2.9,5.3-5,5.2-6.7-2.8-6.7-2.8,0,0-1.7,8-6.7,2.8-2.2-2.3-1.2-4.6,2.9-5.3-2.3.4-4.9-.3-5.6-2.8-.2-.7-.6-5.3-.6-5.9,0-3.1,2.7-2.1,4.3-.9h0Z"></path></svg></a>
                                         </td>
-
                                         <td align="center" height="34" width="34"><a
-                                                href="https://www.linkedin.com/company/wuespace/"><img
-                                                src="https://d1ctrvvfkbyl4b.cloudfront.net/clips/social-icons/linkedin-light%402x.png"
-                                                alt="LinkedIn"
-                                                style="display:block; outline:0;border:0;padding:0;width:24px;height:auto;"
-                                                border="0" width="24"></a>
+                                                href="https://go.wuespace.de/github">
+                                                <svg width="24" height="24" fill="white" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,2C6.477,2,2,6.477,2,12c0,4.419,2.865,8.166,6.839,9.489c0.5,0.09,0.682-0.218,0.682-0.484 c0-0.236-0.009-0.866-0.014-1.699c-2.782,0.602-3.369-1.34-3.369-1.34c-0.455-1.157-1.11-1.465-1.11-1.465 c-0.909-0.62,0.069-0.608,0.069-0.608c1.004,0.071,1.532,1.03,1.532,1.03c0.891,1.529,2.341,1.089,2.91,0.833 c0.091-0.647,0.349-1.086,0.635-1.337c-2.22-0.251-4.555-1.111-4.555-4.943c0-1.091,0.39-1.984,1.03-2.682 C6.546,8.54,6.202,7.524,6.746,6.148c0,0,0.84-0.269,2.75,1.025C10.295,6.95,11.15,6.84,12,6.836 c0.85,0.004,1.705,0.114,2.504,0.336c1.909-1.294,2.748-1.025,2.748-1.025c0.546,1.376,0.202,2.394,0.1,2.646 c0.64,0.699,1.026,1.591,1.026,2.682c0,3.841-2.337,4.687-4.565,4.935c0.359,0.307,0.679,0.917,0.679,1.852 c0,1.335-0.012,2.415-0.012,2.741c0,0.269,0.18,0.579,0.688,0.481C19.138,20.161,22,16.416,22,12C22,6.477,17.523,2,12,2z"></path></svg></a>
+                                        </td>
+                                        <td align="center" height="34" width="34"><a
+                                                href="https://go.wuespace.de/linkedin">
+                                                <svg width="24" height="24" fill="white" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M19.7,3H4.3C3.582,3,3,3.582,3,4.3v15.4C3,20.418,3.582,21,4.3,21h15.4c0.718,0,1.3-0.582,1.3-1.3V4.3 C21,3.582,20.418,3,19.7,3z M8.339,18.338H5.667v-8.59h2.672V18.338z M7.004,8.574c-0.857,0-1.549-0.694-1.549-1.548 c0-0.855,0.691-1.548,1.549-1.548c0.854,0,1.547,0.694,1.547,1.548C8.551,7.881,7.858,8.574,7.004,8.574z M18.339,18.338h-2.669 v-4.177c0-0.996-0.017-2.278-1.387-2.278c-1.389,0-1.601,1.086-1.601,2.206v4.249h-2.667v-8.59h2.559v1.174h0.037 c0.356-0.675,1.227-1.387,2.526-1.387c2.703,0,3.203,1.779,3.203,4.092V18.338z"></path></svg></a>
                                         </td>
                                     </tr>
                                     </tbody>
