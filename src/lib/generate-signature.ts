@@ -52,7 +52,6 @@ export function generateSignature({
 										}
                     <p style="font-size: 0.75em">WüSpace e.V. •
                         Emil-Fischer-Straße 32 •
-                        Informatik 8 •
                         97074 Würzburg<br />
                         <br />
                         Vereinsregisternummer: 201239 (Amtsgericht Würzburg)
@@ -63,6 +62,10 @@ export function generateSignature({
                     <table style="border-collapse:collapse;margin-top:10px;" cellspacing="0" cellpadding="0" border="0">
                         <tbody>
                         <tr>
+                            <td align="center" style="background-color:rgb(69,40,151); border-radius:4px; padding: 4px 8px;">
+                                <a href="https://go.wuespace.de/linkedin" style="color:white; text-decoration:none; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:11px; font-weight:bold; line-height:1;">LinkedIn</a>
+                            </td>
+                            <td style="width:5px;"></td>
                             <td align="center" style="background-color:rgb(69,40,151); border-radius:4px; padding: 4px 8px;">
                                 <a href="https://go.wuespace.de/instagram" style="color:white; text-decoration:none; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:11px; font-weight:bold; line-height:1;">Instagram</a>
                             </td>
@@ -81,10 +84,6 @@ export function generateSignature({
                             <td style="width:5px;"></td>
                             <td align="center" style="background-color:rgb(69,40,151); border-radius:4px; padding: 4px 8px;">
                                 <a href="https://go.wuespace.de/github" style="color:white; text-decoration:none; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:11px; font-weight:bold; line-height:1;">GitHub</a>
-                            </td>
-                            <td style="width:5px;"></td>
-                            <td align="center" style="background-color:rgb(69,40,151); border-radius:4px; padding: 4px 8px;">
-                                <a href="https://go.wuespace.de/linkedin" style="color:white; text-decoration:none; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:11px; font-weight:bold; line-height:1;">LinkedIn</a>
                             </td>
                         </tr>
                         </tbody>
